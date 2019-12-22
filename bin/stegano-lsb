@@ -19,7 +19,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>
 
-__author__ = "Cedric Bonhomme"
+__author__ = "Mohamad Khajezade"
 __version__ = "$Revision: 0.8 $"
 __date__ = "$Date: 2016/08/04 $"
 __revision__ = "$Date: 2019/06/01 $"
@@ -42,7 +42,7 @@ parser_hide = subparsers.add_parser('hide', help='hide help')
 parser_hide.add_argument("-i", "--input", dest="input_image_file",
                 required=True, help="Input image file.")
 parser_hide.add_argument("-e", "--encoding", dest="encoding",
-                choices=tools.ENCODINGS.keys(), default='UTF-8',
+                choices=tools.ENCODINGS.keys(), default='UTF-32LE',
                 help="Specify the encoding of the message to hide." +
                 " UTF-8 (default) or UTF-32LE.")
 
@@ -67,7 +67,7 @@ parser_reveal = subparsers.add_parser('reveal', help='reveal help')
 parser_reveal.add_argument("-i", "--input", dest="input_image_file",
                 required=True, help="Input image file.")
 parser_reveal.add_argument("-e", "--encoding", dest="encoding",
-                choices=tools.ENCODINGS.keys(), default='UTF-8',
+                choices=tools.ENCODINGS.keys(), default='UTF-32LE',
                 help="Specify the encoding of the message to reveal." +
                 " UTF-8 (default) or UTF-32LE.")
 parser_reveal.add_argument("-o", dest="secret_binary",
