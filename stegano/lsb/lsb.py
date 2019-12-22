@@ -19,7 +19,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>
 
-__author__ = "Cedric Bonhomme"
+__author__ = "Mohamad Khajezade"
 __version__ = "$Revision: 0.4 $"
 __date__ = "$Date: 2016/08/04 $"
 __revision__ = "$Date: 2019/06/01 $"
