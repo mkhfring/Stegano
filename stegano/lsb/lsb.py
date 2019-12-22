@@ -33,7 +33,7 @@ from stegano import tools
 def hide(
     input_image: Union[str, IO[bytes]],
     message: str,
-    encoding: str = "UTF-8",
+    encoding: str = "UTF-32LE",
     shift: int = 0,
     auto_convert_rgb: bool = False,
 ):
@@ -102,7 +102,7 @@ def hide(
 
 
 def reveal(input_image: Union[str, IO[bytes]],
-           encoding: str = "UTF-8",
+           encoding: str = "UTF-32LE",
            shift: int = 0
 ):
     """Find a message in an image (with the LSB technique).
